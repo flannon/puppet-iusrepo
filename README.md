@@ -19,7 +19,6 @@ This module enables ius repos.
 ## Module Description
 
 
-
 ## Setup
 
 
@@ -41,9 +40,9 @@ General usage:
 
 ## Reference
 
-This module barows heavily from yguenane/repoforge. You can find yguenane/repoforge here, https://github.com/Mylezeem/puppet-repoforge.
+This module barrows heavily from yguenane/repoforge. You can find yguenane/repoforge here, https://github.com/Mylezeem/puppet-repoforge.
 
 ## Limitations
 
-Currently enabled for RHEL and dirivatives only.
+Currently enabled for RHEL and derivatives only.
 
