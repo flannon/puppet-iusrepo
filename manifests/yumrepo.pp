@@ -15,13 +15,13 @@ define iusrepo::yumrepo (
   yumrepo {
     $reponame :
       descr       => "IUS Community Packages for Enterprise Linux ${::os_maj_version} - ${architecture}",
-      baseurl     => "${baseurl}",
+      baseurl     => "${baseurl}/${reponame}",
       mirrorlist  => "${mirrorlist}",
       enabled     => bool2num(member($enabled,$title)),
-      protect     => 1,
-      gpgcheck    => 0,
+      #protect     => 0,
+      gpgcheck    => 1,
       gpgkey      => 'file:///etc/pki/rpm-gpg/IUS-COMMUNITY-GPG-KEY',
-      includepkgs => $includepkgs[$repo_shortname],
-      exclude     => $exclude[$repo_shortname],
+      #includepkgs => $includepkgs[$repo_shortname],
+      #exclude     => $exclude[$repo_shortname],
   }
 }

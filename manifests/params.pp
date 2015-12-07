@@ -3,11 +3,14 @@ class iusrepo::params {
  
   $mirrorlist = "https://mirrors.iuscommunity.org/mirrorlist?repo=ius-centos${os_maj_version}-debuginfo&arch=${::architecture}&protocol=http"
   
-  $repos = {'ius.repo' => 'ius','ius-archive' => 'ius-archive','ius-dev' => 'ius-dev', 'ius-release' => 'ius-release', 'ius-testing' => 'ius-testing'}
+  $repos = {'ius' => 'ius','archive' => 'ius-archive', 'testing' => 'ius-testing'}
+  #$repos = {'ius.repo' => 'ius'}
 
-  $includepkgs = { 'ius.repo' => abscent, 'ius-archive' => abscent, 'ius-dev' => abscent, 'ius-release' => abscent, 'ius-testing' => abscent}
+  $includepkgs = { 'ius' => abscent, 'archive' => abscent, 'testing' => abscent}
+  #$includepkgs = { 'ius.repo' => abscent}
 
-  $exclude = { 'ius.repo' => abscent, 'ius-archive' => abscent, 'ius-dev' => abscent, 'ius-release' => abscent, 'ius-testing' => abscent}
+  $exclude = { 'ius' => abscent, 'archive' => abscent, 'testing' => abscent}
+  #$exclude = { 'ius.repo' => abscent}
 
   $enabled = [ 'ius' ]
 
