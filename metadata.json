@@ -1,0 +1,14 @@
+{
+  "name": "flannon-iusrepo",
+  "version": "0.1.0",
+  "author": "flannon",
+  "summary": "Installs the ius repo.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/flannon/flannon-iusrepo",
+  "project_page": "https://github.com/flannon/flannon-iusrepo",
+  "issues_url": "https://github.com/flannon/flannon-iusrepo/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
